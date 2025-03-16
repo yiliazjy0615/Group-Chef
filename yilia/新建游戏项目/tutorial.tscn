@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://c5bverxtye7kg"]
+
+[ext_resource type="Texture2D" uid="uid://cjb5y551x1cs" path="res://食物像素素材/图层-12.png" id="1_7n6eb"]
+[ext_resource type="Script" uid="uid://nlkdlw2nsvx2" path="res://close_button_tutorial_back_to_home.gd" id="2_ehuit"]
+[ext_resource type="Texture2D" uid="uid://btlyoq0kyradp" path="res://可以用的/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Sprite sheet for Basic Pack.png" id="2_yb1ct"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yb1ct"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ehuit"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5mrt3"]
+
+[node name="Tutorial" type="Node2D"]
+
+[node name="图层-12" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(586, 464)
+scale = Vector2(4.69048, 4.69048)
+texture = ExtResource("1_7n6eb")
+
+[node name="close button tutorial back to home" type="Button" parent="."]
+offset_left = 1046.0
+offset_top = 31.0
+offset_right = 1127.0
+offset_bottom = 119.0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yb1ct")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ehuit")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5mrt3")
+script = ExtResource("2_ehuit")
+
+[node name="SpriteSheetForBasicPack" type="Sprite2D" parent="close button tutorial back to home"]
+texture_filter = 1
+position = Vector2(42, 43)
+scale = Vector2(3.69806, 3.69806)
+texture = ExtResource("2_yb1ct")
+region_enabled = true
+region_rect = Rect2(836.984, 131, 23.1111, 26.0741)
