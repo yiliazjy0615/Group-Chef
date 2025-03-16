@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dc023j7hlnqwi"]
+[gd_scene load_steps=20 format=3 uid="uid://dc023j7hlnqwi"]
 
 [ext_resource type="Texture2D" uid="uid://350jtljdau5l" path="res://可以用的/Ghostpixxells_pixelfood/02_dish_2.png" id="1_gadgy"]
 [ext_resource type="Texture2D" uid="uid://bvqfop03g52um" path="res://可以用的/Ghostpixxells_pixelfood/01_dish.png" id="2_j0n38"]
@@ -19,7 +19,6 @@
 [ext_resource type="Texture2D" uid="uid://2sy87p5ktvpd" path="res://可以用的/Ghostpixxells_pixelfood/65_loafbread.png" id="17_0lyrf"]
 [ext_resource type="Texture2D" uid="uid://7ytsibeay26f" path="res://可以用的/Ghostpixxells_pixelfood/98_sushi_dish.png" id="18_ae5w8"]
 [ext_resource type="Texture2D" uid="uid://btf4d7fdekvs1" path="res://可以用的/【食材原料】/tomato_画板 1.png" id="19_7om1p"]
-[ext_resource type="Texture2D" uid="uid://c5l1gr31qkjrj" path="res://可以用的/【食材原料】/Adobe Express - file (1).png" id="20_x4yss"]
 
 [node name="recipe" type="Node2D"]
 
@@ -194,9 +193,3 @@ texture_filter = 1
 position = Vector2(648, 67)
 scale = Vector2(2.98438, 2.98438)
 texture = ExtResource("11_ekybg")
-
-[node name="AdobeExpress-File(1)" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(748, 67)
-scale = Vector2(0.135764, 0.135764)
-texture = ExtResource("20_x4yss")
