@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c5bverxtye7kg"]
+[gd_scene load_steps=8 format=3 uid="uid://c5bverxtye7kg"]
 
 [ext_resource type="Texture2D" uid="uid://cjb5y551x1cs" path="res://食物像素素材/图层-12.png" id="1_7n6eb"]
-[ext_resource type="Script" uid="uid://nlkdlw2nsvx2" path="res://close_button_tutorial_back_to_home.gd" id="2_ehuit"]
+[ext_resource type="Texture2D" uid="uid://c0pgbrit68o5e" path="res://可以用的/guaaaovo_Pixel_art_of_an_old-school_coffee_shop_interior_warm_c_55e728a6-6489-4403-bbc2-b4565f9bcab2.png" id="1_t32s1"]
+[ext_resource type="Script" path="res://close_button_tutorial_back_to_home.gd" id="2_ehuit"]
 [ext_resource type="Texture2D" uid="uid://btlyoq0kyradp" path="res://可以用的/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Sprite sheet for Basic Pack.png" id="2_yb1ct"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yb1ct"]
@@ -11,6 +12,17 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5mrt3"]
 
 [node name="Tutorial" type="Node2D"]
+
+[node name="GuaaaovoPixelArtOfAnOld-schoolCoffeeShopInteriorWarmC55e728a6-6489-4403-bbc2-b4565f9Bcab2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(578, 327)
+scale = Vector2(0.828431, 0.828431)
+texture = ExtResource("1_t32s1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1153.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0.419608)
 
 [node name="图层-12" type="Sprite2D" parent="."]
 texture_filter = 1

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dgxajfskrk08u"]
 
 [ext_resource type="Texture2D" uid="uid://cd1mkk8cne2ka" path="res://可以用的/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Mouse sprites/Catpaw Mouse icon.png" id="1_tewyd"]
-[ext_resource type="Script" uid="uid://d2jvowsuehib4" path="res://catpaw_mouse_icon.gd" id="2_1jbr0"]
+[ext_resource type="Script" path="res://catpaw_mouse_icon.gd" id="2_1jbr0"]
 
 [node name="Node2D" type="Node2D"]
 

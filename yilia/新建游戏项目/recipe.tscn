@@ -88,12 +88,6 @@ position = Vector2(66, 54)
 scale = Vector2(2.90625, 2.90625)
 texture = ExtResource("10_3twwp")
 
-[node name="13Bacon2" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(263.965, 2211.33)
-scale = Vector2(8.90649, 8.90649)
-texture = ExtResource("11_ekybg")
-
 [node name="13Bacon" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(66.25, 555)
