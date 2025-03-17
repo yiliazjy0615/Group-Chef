@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c41dbe4t5fr8t"
-path="res://.godot/imported/05a1ef63bfbf.png-d18db616cdb60a0923654fc70a5b6265.ctex"
+uid="uid://c35qqd7u3fsih"
+path="res://.godot/imported/FOXSPRITESHEET.png-dbef79d6316bf0ed0498e2a6e2d1fefc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://05a1ef63bfbf.png"
-dest_files=["res://.godot/imported/05a1ef63bfbf.png-d18db616cdb60a0923654fc70a5b6265.ctex"]
+source_file="res://chef character/FOXSPRITESHEET.png"
+dest_files=["res://.godot/imported/FOXSPRITESHEET.png-dbef79d6316bf0ed0498e2a6e2d1fefc.ctex"]
 
 [params]
 
