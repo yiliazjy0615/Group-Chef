@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dc023j7hlnqwi"]
+[gd_scene load_steps=17 format=3 uid="uid://dc023j7hlnqwi"]
 
 [ext_resource type="Texture2D" uid="uid://350jtljdau5l" path="res://可以用的/Ghostpixxells_pixelfood/02_dish_2.png" id="1_gadgy"]
 [ext_resource type="Texture2D" uid="uid://bvqfop03g52um" path="res://可以用的/Ghostpixxells_pixelfood/01_dish.png" id="2_j0n38"]
@@ -12,9 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://cqkv4fbtpmv5l" path="res://可以用的/Ghostpixxells_pixelfood/20_bagel.png" id="10_3twwp"]
 [ext_resource type="Texture2D" uid="uid://cjhcc3gs1mc80" path="res://可以用的/Ghostpixxells_pixelfood/13_bacon.png" id="11_ekybg"]
 [ext_resource type="Texture2D" uid="uid://dlcaktpxnfybe" path="res://可以用的/Ghostpixxells_pixelfood/14_bacon_dish.png" id="12_cfaah"]
-[ext_resource type="Texture2D" uid="uid://bq4ro7kqovj8p" path="res://可以用的/Ghostpixxells_pixelfood/57_icecream.png" id="13_1d6t3"]
-[ext_resource type="Texture2D" uid="uid://bpkbgjixl8734" path="res://可以用的/Ghostpixxells_pixelfood/58_icecream_bowl.png" id="14_5f40x"]
-[ext_resource type="Texture2D" uid="uid://c3rr6bk12gphm" path="res://可以用的/Ghostpixxells_pixelfood/04_bowl.png" id="15_uwjs7"]
 [ext_resource type="Texture2D" uid="uid://dlsh74l43lf7p" path="res://可以用的/Ghostpixxells_pixelfood/74_omlet_dish.png" id="16_xoic1"]
 [ext_resource type="Texture2D" uid="uid://2sy87p5ktvpd" path="res://可以用的/Ghostpixxells_pixelfood/65_loafbread.png" id="17_0lyrf"]
 [ext_resource type="Texture2D" uid="uid://7ytsibeay26f" path="res://可以用的/Ghostpixxells_pixelfood/98_sushi_dish.png" id="18_ae5w8"]
@@ -54,19 +51,19 @@ texture = ExtResource("4_1a36r")
 
 [node name="Rice画板1" type="Sprite2D" parent="."]
 texture_filter = 2
-position = Vector2(65.4687, 356.531)
+position = Vector2(65.4687, 251.594)
 scale = Vector2(0.09475, 0.09475)
 texture = ExtResource("5_l302q")
 
 [node name="38Friedegg" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(160, 465)
+position = Vector2(160, 360.063)
 scale = Vector2(3.44531, 3.44531)
 texture = ExtResource("6_kcgy4")
 
 [node name="88Salmon" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(158, 359)
+position = Vector2(158, 254.063)
 scale = Vector2(3.44531, 3.44531)
 texture = ExtResource("7_wdw14")
 
@@ -90,33 +87,15 @@ texture = ExtResource("10_3twwp")
 
 [node name="13Bacon" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(66.25, 555)
+position = Vector2(66.25, 442)
 scale = Vector2(2.98438, 2.98438)
 texture = ExtResource("11_ekybg")
 
 [node name="14BaconDish" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(408.5, 553.5)
+position = Vector2(408.5, 440.5)
 scale = Vector2(2.97266, 2.97266)
 texture = ExtResource("12_cfaah")
-
-[node name="57Icecream" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(69, 256.625)
-scale = Vector2(2.78125, 2.78125)
-texture = ExtResource("13_1d6t3")
-
-[node name="58IcecreamBowl" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(409, 250)
-scale = Vector2(2.70312, 2.70312)
-texture = ExtResource("14_5f40x")
-
-[node name="04Bowl" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(265, 250.625)
-scale = Vector2(2.66406, 2.66406)
-texture = ExtResource("15_uwjs7")
 
 [node name="20Bagel2" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -132,7 +111,7 @@ texture = ExtResource("2_j0n38")
 
 [node name="74OmletDish" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(408, 449)
+position = Vector2(408, 344.063)
 scale = Vector2(2.92188, 2.92188)
 texture = ExtResource("16_xoic1")
 
@@ -144,25 +123,25 @@ texture = ExtResource("17_0lyrf")
 
 [node name="98SushiDish" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(409, 351)
+position = Vector2(409, 246.063)
 scale = Vector2(2.9375, 2.9375)
 texture = ExtResource("18_ae5w8")
 
 [node name="01Dish3" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(269, 345)
+position = Vector2(269, 240.063)
 scale = Vector2(3.00391, 3.00391)
 texture = ExtResource("2_j0n38")
 
 [node name="01Dish4" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(273, 448)
+position = Vector2(273, 343.063)
 scale = Vector2(3.00391, 3.00391)
 texture = ExtResource("2_j0n38")
 
 [node name="01Dish5" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(274.063, 545.063)
+position = Vector2(274.063, 432.063)
 scale = Vector2(3.00391, 3.00391)
 texture = ExtResource("2_j0n38")
 
@@ -173,13 +152,8 @@ scale = Vector2(2.92188, 2.92188)
 texture = ExtResource("17_0lyrf")
 
 [node name="Tomato画板1" type="Sprite2D" parent="."]
-position = Vector2(49, 473)
-scale = Vector2(0.0413333, 0.0413333)
-texture = ExtResource("19_7om1p")
-
-[node name="Tomato画板1" type="Sprite2D" parent="Tomato画板1"]
-position = Vector2(592.742, -133.065)
-scale = Vector2(1.1003, 1.1003)
+position = Vector2(67, 362.063)
+scale = Vector2(0.0753333, 0.0753333)
 texture = ExtResource("19_7om1p")
 
 [node name="13Bacon3" type="Sprite2D" parent="."]
