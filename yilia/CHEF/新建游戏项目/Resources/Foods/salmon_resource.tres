@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FoodResource" load_steps=3 format=3 uid="uid://coks86ljewaj8"]
+
+[ext_resource type="Script" path="res://Script/food_resource.gd" id="1_ennr1"]
+[ext_resource type="Texture2D" uid="uid://buu5bmdfts46r" path="res://可以用的/Ghostpixxells_pixelfood/88_salmon.png" id="2_67oyg"]
+
+[resource]
+script = ExtResource("1_ennr1")
+name = "Salmon"
+texture = ExtResource("2_67oyg")

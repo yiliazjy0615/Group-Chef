@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FoodResource" load_steps=3 format=3 uid="uid://dsgmt542cxo7w"]
+
+[ext_resource type="Script" path="res://Script/food_resource.gd" id="1_a61l7"]
+[ext_resource type="Texture2D" uid="uid://cqkv4fbtpmv5l" path="res://可以用的/Ghostpixxells_pixelfood/20_bagel.png" id="2_5ob0w"]
+
+[resource]
+script = ExtResource("1_a61l7")
+name = "Bagel"
+texture = ExtResource("2_5ob0w")

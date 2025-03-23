@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FoodResource" load_steps=3 format=3 uid="uid://b6n88ggpwnebk"]
+
+[ext_resource type="Script" path="res://Script/food_resource.gd" id="1_yq3tj"]
+[ext_resource type="Texture2D" uid="uid://d3sbv513olu4m" path="res://可以用的/Ghostpixxells_pixelfood/61_jam.png" id="2_vea78"]
+
+[resource]
+script = ExtResource("1_yq3tj")
+name = "Jam"
+texture = ExtResource("2_vea78")
