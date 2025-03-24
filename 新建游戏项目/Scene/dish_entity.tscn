@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cudj0pek55kux"]
+
+[ext_resource type="Script" uid="uid://dv6wt3nxiq4om" path="res://Script/dish_entity.gd" id="1_axm4s"]
+[ext_resource type="Texture2D" uid="uid://bvqfop03g52um" path="res://可以用的/Ghostpixxells_pixelfood/01_dish.png" id="2_r0vqw"]
+
+[node name="DishEntity" type="Node2D" node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_axm4s")
+sprite = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(5, 5)
+texture = ExtResource("2_r0vqw")

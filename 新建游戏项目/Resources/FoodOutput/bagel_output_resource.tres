@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="FoodOutputResource" load_steps=5 format=3 uid="uid://e4kffouiwkn0"]
+
+[ext_resource type="Script" path="res://Script/food_resource.gd" id="1_vputs"]
+[ext_resource type="Resource" uid="uid://dsgmt542cxo7w" path="res://Resources/Foods/bagel_resource.tres" id="2_1fap4"]
+[ext_resource type="Script" path="res://Script/food_output_resource.gd" id="2_vf20c"]
+[ext_resource type="Texture2D" uid="uid://biulnh2q1228i" path="res://可以用的/Ghostpixxells_pixelfood/21_bagel_dish.png" id="4_a6dyc"]
+
+[resource]
+script = ExtResource("2_vf20c")
+name = "BagelOutput"
+texture = ExtResource("4_a6dyc")
+crafting_list = Array[ExtResource("1_vputs")]([ExtResource("2_1fap4"), ExtResource("2_1fap4")])

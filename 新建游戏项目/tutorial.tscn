@@ -1,0 +1,205 @@
+[gd_scene load_steps=21 format=3 uid="uid://c5bverxtye7kg"]
+
+[ext_resource type="Texture2D" uid="uid://c0pgbrit68o5e" path="res://可以用的/guaaaovo_Pixel_art_of_an_old-school_coffee_shop_interior_warm_c_55e728a6-6489-4403-bbc2-b4565f9bcab2.png" id="1_t32s1"]
+[ext_resource type="Script" uid="uid://nlkdlw2nsvx2" path="res://close_button_tutorial_back_to_home.gd" id="2_ehuit"]
+[ext_resource type="Texture2D" uid="uid://btlyoq0kyradp" path="res://可以用的/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Sprite sheet for Basic Pack.png" id="2_yb1ct"]
+[ext_resource type="Texture2D" uid="uid://bvqfop03g52um" path="res://可以用的/Ghostpixxells_pixelfood/01_dish.png" id="5_dudfa"]
+[ext_resource type="Texture2D" uid="uid://d3sbv513olu4m" path="res://可以用的/Ghostpixxells_pixelfood/61_jam.png" id="7_tfgte"]
+[ext_resource type="Texture2D" uid="uid://c2ggx1nckghen" path="res://可以用的/【食材原料】/rice_画板 1.png" id="8_dyhf1"]
+[ext_resource type="Texture2D" uid="uid://dgjwjcd3wtm2m" path="res://可以用的/Ghostpixxells_pixelfood/38_friedegg.png" id="9_53tq2"]
+[ext_resource type="Texture2D" uid="uid://buu5bmdfts46r" path="res://可以用的/Ghostpixxells_pixelfood/88_salmon.png" id="10_4ods2"]
+[ext_resource type="Texture2D" uid="uid://l2p7tfaa23d6" path="res://可以用的/Ghostpixxells_pixelfood/62_jam_dish.png" id="11_0gmok"]
+[ext_resource type="Texture2D" uid="uid://biulnh2q1228i" path="res://可以用的/Ghostpixxells_pixelfood/21_bagel_dish.png" id="12_ns12n"]
+[ext_resource type="Texture2D" uid="uid://cqkv4fbtpmv5l" path="res://可以用的/Ghostpixxells_pixelfood/20_bagel.png" id="13_nghrg"]
+[ext_resource type="Texture2D" uid="uid://cjhcc3gs1mc80" path="res://可以用的/Ghostpixxells_pixelfood/13_bacon.png" id="14_qs7l5"]
+[ext_resource type="Texture2D" uid="uid://dlcaktpxnfybe" path="res://可以用的/Ghostpixxells_pixelfood/14_bacon_dish.png" id="15_k62om"]
+[ext_resource type="Texture2D" uid="uid://dlsh74l43lf7p" path="res://可以用的/Ghostpixxells_pixelfood/74_omlet_dish.png" id="16_bb16k"]
+[ext_resource type="Texture2D" uid="uid://2sy87p5ktvpd" path="res://可以用的/Ghostpixxells_pixelfood/65_loafbread.png" id="17_0yspx"]
+[ext_resource type="Texture2D" uid="uid://7ytsibeay26f" path="res://可以用的/Ghostpixxells_pixelfood/98_sushi_dish.png" id="18_pm7ge"]
+[ext_resource type="Texture2D" uid="uid://btf4d7fdekvs1" path="res://可以用的/【食材原料】/tomato_画板 1.png" id="19_brok5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yb1ct"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ehuit"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5mrt3"]
+
+[node name="Tutorial" type="Node2D"]
+
+[node name="GuaaaovoPixelArtOfAnOld-schoolCoffeeShopInteriorWarmC55e728a6-6489-4403-bbc2-b4565f9Bcab2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(578, 327)
+scale = Vector2(0.828431, 0.828431)
+texture = ExtResource("1_t32s1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1153.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0.419608)
+
+[node name="close button tutorial back to home" type="Button" parent="."]
+offset_left = 1046.0
+offset_top = 31.0
+offset_right = 1127.0
+offset_bottom = 119.0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yb1ct")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ehuit")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5mrt3")
+script = ExtResource("2_ehuit")
+
+[node name="SpriteSheetForBasicPack" type="Sprite2D" parent="close button tutorial back to home"]
+texture_filter = 1
+position = Vector2(42, 43)
+scale = Vector2(3.69806, 3.69806)
+texture = ExtResource("2_yb1ct")
+region_enabled = true
+region_rect = Rect2(836.984, 131, 23.1111, 26.0741)
+
+[node name="Game GUILDE" type="Label" parent="."]
+offset_left = 528.0
+offset_top = 95.0
+offset_right = 661.0
+offset_bottom = 148.0
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 21
+text = "Game Guide"
+uppercase = true
+
+[node name="Description" type="RichTextLabel" parent="."]
+offset_left = 236.0
+offset_top = 135.0
+offset_right = 1045.0
+offset_bottom = 329.0
+text = "Observe the food orders from customers and prepare the dishes according to the recipes. Pick the correct ingredients from the conveyor belt at the right time and place them on the plate to create the requested dish. Once the dish is ready, drag it to the customer to serve them.
+
+Each game session allows three chances to make mistakes. Be careful and follow the recipes correctly!
+
+Below are the recipe combinations you need to follow."
+
+[node name="Recipes" type="RichTextLabel" parent="."]
+offset_left = 651.0
+offset_top = 386.0
+offset_right = 1063.0
+offset_bottom = 586.0
+theme_override_font_sizes/normal_font_size = 21
+text = "Bagle + Bagle= Bagledish
+Loafbread +Jam= Jambread
+Rice + Salmone= Sushi
+Tomato + Friedeggs= Omlete
+Bacon + Dish= Bacondish
+
+
+"
+
+[node name="01Dish" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(449, 370.202)
+scale = Vector2(1.75727, 1.75727)
+texture = ExtResource("5_dudfa")
+
+[node name="61Jam" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(391.348, 436.318)
+scale = Vector2(1.58131, 1.58131)
+texture = ExtResource("7_tfgte")
+
+[node name="Rice画板1" type="Sprite2D" parent="."]
+texture_filter = 2
+position = Vector2(340, 503.202)
+scale = Vector2(0.0554281, 0.0554281)
+texture = ExtResource("8_dyhf1")
+
+[node name="38Friedegg" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(388, 579.202)
+scale = Vector2(2.01548, 2.01548)
+texture = ExtResource("9_53tq2")
+
+[node name="88Salmon" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(396, 507.202)
+scale = Vector2(2.01548, 2.01548)
+texture = ExtResource("10_4ods2")
+
+[node name="62JamDish" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(512, 437.202)
+scale = Vector2(1.68185, 1.68185)
+texture = ExtResource("11_0gmok")
+
+[node name="21BagelDish" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(512, 370.202)
+scale = Vector2(1.66814, 1.66814)
+texture = ExtResource("12_ns12n")
+
+[node name="20Bagel" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(341, 368.202)
+scale = Vector2(1.70014, 1.70014)
+texture = ExtResource("13_nghrg")
+
+[node name="13Bacon" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(426.933, 1027)
+scale = Vector2(1.74584, 1.74584)
+texture = ExtResource("14_qs7l5")
+
+[node name="14BaconDish" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(633.933, 1026)
+scale = Vector2(1.73898, 1.73898)
+texture = ExtResource("15_k62om")
+
+[node name="20Bagel2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(388, 367.202)
+scale = Vector2(1.70014, 1.70014)
+texture = ExtResource("13_nghrg")
+
+[node name="01Dish2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(449, 438.202)
+scale = Vector2(1.75727, 1.75727)
+texture = ExtResource("5_dudfa")
+
+[node name="74OmletDish" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(512, 581.202)
+scale = Vector2(1.70928, 1.70928)
+texture = ExtResource("16_bb16k")
+
+[node name="65Loafbread" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(335.348, 434.318)
+scale = Vector2(1.70928, 1.70928)
+texture = ExtResource("17_0yspx")
+
+[node name="98SushiDish" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(512, 508.202)
+scale = Vector2(1.71842, 1.71842)
+texture = ExtResource("18_pm7ge")
+
+[node name="01Dish3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(449, 506.202)
+scale = Vector2(1.75727, 1.75727)
+texture = ExtResource("5_dudfa")
+
+[node name="01Dish4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(450, 574.202)
+scale = Vector2(1.75727, 1.75727)
+texture = ExtResource("5_dudfa")
+
+[node name="01Dish5" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(515.933, 1027)
+scale = Vector2(1.75727, 1.75727)
+texture = ExtResource("5_dudfa")
+
+[node name="Tomato画板1" type="Sprite2D" parent="."]
+position = Vector2(336, 581.202)
+scale = Vector2(0.0440695, 0.0440695)
+texture = ExtResource("19_brok5")

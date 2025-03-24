@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="FoodOutputResource" load_steps=5 format=3 uid="uid://dat2rl7xb4g42"]
+
+[ext_resource type="Script" uid="uid://fvw7mm2e8seg" path="res://Script/food_resource.gd" id="1_gw754"]
+[ext_resource type="Script" uid="uid://c4ssjfwvx5sv7" path="res://Script/food_output_resource.gd" id="2_b7uyv"]
+[ext_resource type="Resource" uid="uid://scjk1qbac3g5" path="res://Resources/Foods/bacon_resource.tres" id="2_s0wty"]
+[ext_resource type="Texture2D" uid="uid://dlcaktpxnfybe" path="res://可以用的/Ghostpixxells_pixelfood/14_bacon_dish.png" id="4_1j0iu"]
+
+[resource]
+script = ExtResource("2_b7uyv")
+name = "Bacon"
+texture = ExtResource("4_1j0iu")
+crafting_list = Array[ExtResource("1_gw754")]([ExtResource("2_s0wty")])

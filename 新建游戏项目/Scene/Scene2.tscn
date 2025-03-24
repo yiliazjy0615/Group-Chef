@@ -1,0 +1,514 @@
+[gd_scene load_steps=56 format=3 uid="uid://1uy8c6tpk3is"]
+
+[ext_resource type="Script" uid="uid://duocpdhixw6cy" path="res://Script/scene_2.gd" id="1_qmxqm"]
+[ext_resource type="Script" uid="uid://nlkdlw2nsvx2" path="res://close_button_tutorial_back_to_home.gd" id="2_3jfg7"]
+[ext_resource type="Texture2D" uid="uid://v5fnltwm3eg2" path="res://可以用的/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_Light_example.png" id="2_vfury"]
+[ext_resource type="Texture2D" uid="uid://btlyoq0kyradp" path="res://可以用的/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Sprite sheet for Basic Pack.png" id="3_6fgva"]
+[ext_resource type="PackedScene" uid="uid://bp3qhv86st4ke" path="res://Scene/food_entity.tscn" id="3_a7fpf"]
+[ext_resource type="PackedScene" uid="uid://cudj0pek55kux" path="res://Scene/dish_entity.tscn" id="3_sprng"]
+[ext_resource type="Resource" uid="uid://scjk1qbac3g5" path="res://Resources/Foods/bacon_resource.tres" id="4_3h01m"]
+[ext_resource type="Texture2D" uid="uid://cjhcc3gs1mc80" path="res://可以用的/Ghostpixxells_pixelfood/13_bacon.png" id="5_6dpnf"]
+[ext_resource type="Resource" uid="uid://dsgmt542cxo7w" path="res://Resources/Foods/bagel_resource.tres" id="6_u2u1l"]
+[ext_resource type="Script" uid="uid://dgrmkqcd55wdt" path="res://Script/scene2_food_path.gd" id="7_6umhl"]
+[ext_resource type="Resource" uid="uid://brp026q8bmifm" path="res://Resources/Foods/friedegg_resource.tres" id="7_fgyl7"]
+[ext_resource type="Resource" uid="uid://b6n88ggpwnebk" path="res://Resources/Foods/jam_resource.tres" id="8_c37pb"]
+[ext_resource type="Texture2D" uid="uid://cqkv4fbtpmv5l" path="res://可以用的/Ghostpixxells_pixelfood/20_bagel.png" id="8_r5gx2"]
+[ext_resource type="Resource" uid="uid://27aeoavm7llm" path="res://Resources/Foods/loafbread_resource.tres" id="9_8sv0y"]
+[ext_resource type="Resource" uid="uid://u5endp6gow44" path="res://Resources/Foods/rice_resource.tres" id="10_6u777"]
+[ext_resource type="Texture2D" uid="uid://dgjwjcd3wtm2m" path="res://可以用的/Ghostpixxells_pixelfood/38_friedegg.png" id="10_wutk1"]
+[ext_resource type="Resource" uid="uid://coks86ljewaj8" path="res://Resources/Foods/salmon_resource.tres" id="11_8alnl"]
+[ext_resource type="Resource" uid="uid://cvu56vj3ys034" path="res://Resources/Foods/tomato_resource.tres" id="12_7gjf2"]
+[ext_resource type="Texture2D" uid="uid://d3sbv513olu4m" path="res://可以用的/Ghostpixxells_pixelfood/61_jam.png" id="12_rkfr6"]
+[ext_resource type="Texture2D" uid="uid://2sy87p5ktvpd" path="res://可以用的/Ghostpixxells_pixelfood/65_loafbread.png" id="14_bjf3f"]
+[ext_resource type="Texture2D" uid="uid://c2ggx1nckghen" path="res://可以用的/【食材原料】/rice_画板 1.png" id="16_xvmow"]
+[ext_resource type="Texture2D" uid="uid://buu5bmdfts46r" path="res://可以用的/Ghostpixxells_pixelfood/88_salmon.png" id="18_dmu72"]
+[ext_resource type="Texture2D" uid="uid://btf4d7fdekvs1" path="res://可以用的/【食材原料】/tomato_画板 1.png" id="20_xh7k0"]
+[ext_resource type="Script" uid="uid://rvoruupv47yp" path="res://Script/scene_2_game_manager.gd" id="21_iympl"]
+[ext_resource type="Script" uid="uid://c4ssjfwvx5sv7" path="res://Script/food_output_resource.gd" id="22_kllvi"]
+[ext_resource type="Resource" uid="uid://e4kffouiwkn0" path="res://Resources/FoodOutput/bagel_output_resource.tres" id="23_u16o7"]
+[ext_resource type="Resource" uid="uid://dat2rl7xb4g42" path="res://Resources/FoodOutput/bacon_output_resource.tres" id="25_f3sgr"]
+[ext_resource type="Resource" uid="uid://cn3qij1dtnmmh" path="res://Resources/FoodOutput/jam_output_resource.tres" id="26_qyobe"]
+[ext_resource type="Resource" uid="uid://ccimbhntfuehh" path="res://Resources/FoodOutput/omlet_output_resource.tres" id="27_mras3"]
+[ext_resource type="Resource" uid="uid://4csjtxwsewmy" path="res://Resources/FoodOutput/sushi_output_resource.tres" id="28_xp3oq"]
+[ext_resource type="PackedScene" uid="uid://dd3ox6heh1r8x" path="res://Scene/character_entity.tscn" id="30_di5ko"]
+[ext_resource type="Texture2D" uid="uid://dbcoawjsq6scd" path="res://可以用的/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/Square Buttons 19x26.png" id="31_sl17y"]
+[ext_resource type="PackedScene" uid="uid://b84r8mykqrfv0" path="res://Scene/color_progress_bar.tscn" id="32_4m2gk"]
+[ext_resource type="PackedScene" uid="uid://w7ctd6fag4cd" path="res://Scene/faild_scene.tscn" id="32_h15o4"]
+[ext_resource type="Texture2D" uid="uid://1tljqpe0dhy0" path="res://可以用的/Basic character v1.png" id="33_jvu24"]
+[ext_resource type="Script" uid="uid://44nv2xi4fe80" path="res://Script/health_bar.gd" id="35_sls7f"]
+[ext_resource type="Texture2D" uid="uid://un3c3rmfq281" path="res://可以用的/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/Inventory_Herat_Spritesheet.png" id="36_26t7e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_075gm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rvwb8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3dmkf"]
+
+[sub_resource type="Curve2D" id="Curve2D_gdxjj"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2408, 512, 0, 0, 0, 0, -128, 512)
+}
+point_count = 2
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujj5t"]
+atlas = ExtResource("33_jvu24")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xpek"]
+atlas = ExtResource("33_jvu24")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7vpas"]
+atlas = ExtResource("33_jvu24")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwxot"]
+atlas = ExtResource("33_jvu24")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_es0cu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujj5t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3xpek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7vpas")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwxot")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_1yas3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Characters/CharacterEntity:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(583, 182)]
+}
+
+[sub_resource type="Animation" id="Animation_he7gx"]
+resource_name = "character_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Characters/CharacterEntity:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(583, -72), Vector2(583, 182)]
+}
+
+[sub_resource type="Animation" id="Animation_7rr27"]
+resource_name = "character_out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Characters/CharacterEntity:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(583, 182), Vector2(1242, 182)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3tp5s"]
+_data = {
+&"RESET": SubResource("Animation_1yas3"),
+&"character_in": SubResource("Animation_he7gx"),
+&"character_out": SubResource("Animation_7rr27")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hfr8"]
+atlas = ExtResource("31_sl17y")
+region = Rect2(0, 8, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53g0f"]
+atlas = ExtResource("31_sl17y")
+region = Rect2(32, 8, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdooa"]
+atlas = ExtResource("36_26t7e")
+region = Rect2(0, 48, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqa6w"]
+atlas = ExtResource("36_26t7e")
+region = Rect2(64, 48, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7hktb"]
+atlas = ExtResource("36_26t7e")
+region = Rect2(0, 48, 32, 32)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_qmxqm")
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterEntity" parent="Characters" instance=ExtResource("30_di5ko")]
+position = Vector2(583, 182)
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(307, 389.875)
+scale = Vector2(5.52557, 6.64323)
+texture = ExtResource("2_vfury")
+
+[node name="close button tutorial back to home" type="Button" parent="."]
+offset_left = 1046.0
+offset_top = 31.0
+offset_right = 1127.0
+offset_bottom = 119.0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_075gm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rvwb8")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3dmkf")
+script = ExtResource("2_3jfg7")
+
+[node name="SpriteSheetForBasicPack" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1088, 74)
+scale = Vector2(3.69806, 3.69806)
+texture = ExtResource("3_6fgva")
+region_enabled = true
+region_rect = Rect2(836.984, 131, 23.1111, 26.0741)
+
+[node name="OutputDishEntity" parent="." instance=ExtResource("3_sprng")]
+position = Vector2(555, 306)
+
+[node name="Sprite2D" parent="OutputDishEntity" index="0"]
+position = Vector2(33, -24)
+scale = Vector2(8, 8)
+
+[node name="FoodPath" type="Node2D" parent="." node_paths=PackedStringArray("path2d")]
+script = ExtResource("7_6umhl")
+path2d = NodePath("Path2D")
+
+[node name="Path2D" type="Path2D" parent="FoodPath"]
+curve = SubResource("Curve2D_gdxjj")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="FoodPath/Path2D"]
+position = Vector2(1247.02, 512)
+rotation = 3.14159
+progress = 1160.98
+loop = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="FoodPath/Path2D/PathFollow2D"]
+position = Vector2(6.29444e-06, 72)
+rotation = 3.14159
+remote_path = NodePath("../../../../Foods/DishEntity")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FoodPath/Path2D/PathFollow2D"]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_es0cu")
+autoplay = "default"
+frame_progress = 0.622874
+flip_v = true
+
+[node name="PathFollow2D2" type="PathFollow2D" parent="FoodPath/Path2D"]
+position = Vector2(1404.25, 512)
+rotation = 3.14159
+progress = 1003.75
+loop = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="FoodPath/Path2D/PathFollow2D2"]
+position = Vector2(6.29444e-06, 72)
+rotation = -3.14159
+remote_path = NodePath("../../../../Foods/DishEntity2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FoodPath/Path2D/PathFollow2D2"]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_es0cu")
+autoplay = "default"
+frame_progress = 0.528383
+flip_v = true
+
+[node name="PathFollow2D3" type="PathFollow2D" parent="FoodPath/Path2D"]
+position = Vector2(1560.98, 512)
+rotation = 3.14159
+progress = 847.024
+loop = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="FoodPath/Path2D/PathFollow2D3"]
+position = Vector2(6.29444e-06, 72)
+rotation = -3.14159
+remote_path = NodePath("../../../../Foods/DishEntity3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FoodPath/Path2D/PathFollow2D3"]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_es0cu")
+autoplay = "default"
+frame_progress = 0.528383
+flip_v = true
+
+[node name="PathFollow2D4" type="PathFollow2D" parent="FoodPath/Path2D"]
+position = Vector2(1717.95, 512)
+rotation = 3.14159
+progress = 690.046
+loop = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="FoodPath/Path2D/PathFollow2D4"]
+position = Vector2(6.29444e-06, 72)
+rotation = -3.14159
+remote_path = NodePath("../../../../Foods/DishEntity4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FoodPath/Path2D/PathFollow2D4"]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_es0cu")
+autoplay = "default"
+frame_progress = 0.528383
+flip_v = true
+
+[node name="PathFollow2D5" type="PathFollow2D" parent="FoodPath/Path2D"]
+position = Vector2(1874.68, 512)
+rotation = 3.14159
+progress = 533.321
+loop = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="FoodPath/Path2D/PathFollow2D5"]
+position = Vector2(6.29444e-06, 72)
+rotation = -3.14159
+remote_path = NodePath("../../../../Foods/DishEntity5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FoodPath/Path2D/PathFollow2D5"]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_es0cu")
+autoplay = "default"
+frame_progress = 0.528383
+flip_v = true
+
+[node name="PathFollow2D6" type="PathFollow2D" parent="FoodPath/Path2D"]
+position = Vector2(2031.91, 512)
+rotation = 3.14159
+progress = 376.089
+loop = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="FoodPath/Path2D/PathFollow2D6"]
+position = Vector2(6.29444e-06, 72)
+rotation = -3.14159
+remote_path = NodePath("../../../../Foods/DishEntity6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FoodPath/Path2D/PathFollow2D6"]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_es0cu")
+autoplay = "default"
+frame_progress = 0.528383
+flip_v = true
+
+[node name="PathFollow2D7" type="PathFollow2D" parent="FoodPath/Path2D"]
+position = Vector2(2189.02, 512)
+rotation = 3.14159
+progress = 218.98
+loop = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="FoodPath/Path2D/PathFollow2D7"]
+position = Vector2(6.29444e-06, 72)
+rotation = -3.14159
+remote_path = NodePath("../../../../Foods/DishEntity7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FoodPath/Path2D/PathFollow2D7"]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_es0cu")
+autoplay = "default"
+frame_progress = 0.528383
+flip_v = true
+
+[node name="PathFollow2D8" type="PathFollow2D" parent="FoodPath/Path2D"]
+position = Vector2(2345.52, 512)
+rotation = 3.14159
+progress = 62.42
+loop = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="FoodPath/Path2D/PathFollow2D8"]
+position = Vector2(6.29444e-06, 72)
+rotation = -3.14159
+remote_path = NodePath("../../../../Foods/DishEntity8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FoodPath/Path2D/PathFollow2D8"]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_es0cu")
+autoplay = "default"
+frame_progress = 0.528383
+flip_v = true
+
+[node name="Foods" type="Node2D" parent="."]
+
+[node name="DishEntity" parent="Foods" instance=ExtResource("3_sprng")]
+position = Vector2(1247.02, 440)
+food_resource = ExtResource("4_3h01m")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Foods/DishEntity"]
+position = Vector2(0, 24)
+scale = Vector2(3, 3)
+texture = ExtResource("5_6dpnf")
+
+[node name="DishEntity2" parent="Foods" instance=ExtResource("3_sprng")]
+position = Vector2(1404.25, 440)
+food_resource = ExtResource("6_u2u1l")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Foods/DishEntity2"]
+position = Vector2(0, 24)
+scale = Vector2(3, 3)
+texture = ExtResource("8_r5gx2")
+
+[node name="DishEntity3" parent="Foods" instance=ExtResource("3_sprng")]
+position = Vector2(1560.98, 440)
+food_resource = ExtResource("7_fgyl7")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Foods/DishEntity3"]
+position = Vector2(0, 24)
+scale = Vector2(3, 3)
+texture = ExtResource("10_wutk1")
+
+[node name="DishEntity4" parent="Foods" instance=ExtResource("3_sprng")]
+position = Vector2(1717.95, 440)
+food_resource = ExtResource("8_c37pb")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Foods/DishEntity4"]
+position = Vector2(0, 24)
+scale = Vector2(3, 3)
+texture = ExtResource("12_rkfr6")
+
+[node name="DishEntity5" parent="Foods" instance=ExtResource("3_sprng")]
+position = Vector2(1874.68, 440)
+food_resource = ExtResource("9_8sv0y")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Foods/DishEntity5"]
+position = Vector2(0, 24)
+scale = Vector2(3, 3)
+texture = ExtResource("14_bjf3f")
+
+[node name="DishEntity6" parent="Foods" instance=ExtResource("3_sprng")]
+position = Vector2(2031.91, 440)
+food_resource = ExtResource("10_6u777")
+sprite_scale = Vector2(0.1, 0.1)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Foods/DishEntity6"]
+position = Vector2(0, 24)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("16_xvmow")
+
+[node name="DishEntity7" parent="Foods" instance=ExtResource("3_sprng")]
+position = Vector2(2189.02, 440)
+food_resource = ExtResource("11_8alnl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Foods/DishEntity7"]
+position = Vector2(0, 24)
+scale = Vector2(3, 3)
+texture = ExtResource("18_dmu72")
+
+[node name="DishEntity8" parent="Foods" instance=ExtResource("3_sprng")]
+position = Vector2(2345.52, 440)
+food_resource = ExtResource("12_7gjf2")
+sprite_scale = Vector2(0.1, 0.1)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Foods/DishEntity8"]
+position = Vector2(0, 24)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("20_xh7k0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Scene2GameManager")
+libraries = {
+&"": SubResource("AnimationLibrary_3tp5s")
+}
+
+[node name="Scene2GameManager" type="Node2D" parent="." node_paths=PackedStringArray("character_animation_player", "character_timer", "character_entity", "output_food_entity", "output_food_default_position", "foods", "output_dish", "clear_button", "progress_bar", "health_bar")]
+position = Vector2(587, 337)
+script = ExtResource("21_iympl")
+character_animation_player = NodePath("../AnimationPlayer")
+character_timer = NodePath("../Timer")
+character_entity = NodePath("../Characters/CharacterEntity")
+output_food_entity = NodePath("../FoodEntity")
+output_food_default_position = NodePath("../Marker2D")
+foods = NodePath("../Foods")
+output_dish = NodePath("../OutputDishEntity")
+food_output_list = Array[ExtResource("22_kllvi")]([ExtResource("23_u16o7"), ExtResource("25_f3sgr"), ExtResource("26_qyobe"), ExtResource("27_mras3"), ExtResource("28_xp3oq")])
+clear_button = NodePath("../ClearButton")
+progress_bar = NodePath("../ColorProgressBar")
+health_bar = NodePath("../HealthBar")
+faild_scene = ExtResource("32_h15o4")
+
+[node name="FoodEntity" parent="." instance=ExtResource("3_a7fpf")]
+position = Vector2(582, 333)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(582, 333)
+
+[node name="ClearButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(120, 120)
+offset_left = 793.0
+offset_top = 278.0
+offset_right = 833.0
+offset_bottom = 318.0
+focus_mode = 0
+texture_normal = SubResource("AtlasTexture_4hfr8")
+texture_pressed = SubResource("AtlasTexture_53g0f")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="ClearButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Del"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorProgressBar" parent="." instance=ExtResource("32_4m2gk")]
+
+[node name="HealthBar" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("35_sls7f")
+full_health_texture = SubResource("AtlasTexture_rdooa")
+empty_health_texure = SubResource("AtlasTexture_tqa6w")
+
+[node name="TextureRect" type="TextureRect" parent="HealthBar"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = SubResource("AtlasTexture_7hktb")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="HealthBar"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_7hktb")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="HealthBar"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_7hktb")
+expand_mode = 3
+stretch_mode = 5
+
+[editable path="OutputDishEntity"]
