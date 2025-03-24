@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="FoodResource" load_steps=3 format=3 uid="uid://u5endp6gow44"]
-
-[ext_resource type="Script" path="res://Script/food_resource.gd" id="1_3y2h1"]
-[ext_resource type="Texture2D" uid="uid://c2ggx1nckghen" path="res://可以用的/【食材原料】/rice_画板 1.png" id="2_5cefq"]
-
-[resource]
-script = ExtResource("1_3y2h1")
-name = "Rice"
-texture = ExtResource("2_5cefq")

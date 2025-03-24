@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="FoodResource" load_steps=3 format=3 uid="uid://brp026q8bmifm"]
-
-[ext_resource type="Script" path="res://Script/food_resource.gd" id="1_gsm0l"]
-[ext_resource type="Texture2D" uid="uid://dgjwjcd3wtm2m" path="res://可以用的/Ghostpixxells_pixelfood/38_friedegg.png" id="2_43s3e"]
-
-[resource]
-script = ExtResource("1_gsm0l")
-name = "Friedegg"
-texture = ExtResource("2_43s3e")
